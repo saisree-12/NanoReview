@@ -1,0 +1,31 @@
+ <h1>Somemore please<\h1>
+        <div class='container shadow my-5 p-5 '>
+        <form action='form_mobile.php' method='post' >
+        <input type='text' class='form-control' name='Name' style='height:50px' id='floatingInput' diabledplaceholder=$product_name>
+        <div class='form-floating mb-3'>
+        </div><br>
+        <div class='row row-cols-2'>
+            <div class='col-auto ms-auto col-sm-3' style='margin-left:20%'>
+                <input type='file' class='form-control' name='Image' accept='.jpg, .jpeg, .png' id='floatingInput' required rows='3' placeholder='Image'>
+            </div>
+            <div class='col-auto ms-auto col-sm-3'>
+            <input type='text' class='form-control' id='floatingInput' name='ROM'  required rows='3' placeholder='ROM'>
+            </div>
+        </div><br><br>
+        <div class='row row-cols-2'>
+            <div class='col-auto ms-auto col-sm-3' style='margin-left:20%'>
+                <input type='text' class='form-control' id='floatingInput' name='Processor'  required rows='3' placeholder='Processor'>
+            </div>
+            <div class='col-auto ms-auto col-sm-3'>
+            <input type='text' class='form-control' id='floatingInput'  name='Rear_Camera' required rows='3' placeholder='Rear_Camera'>
+            </div>
+        </div><br><br>
+        <div class='row row-cols-2'>
+            <div class='col-auto ms-auto col-sm-3' style='margin-left:20%'>
+                <input type='text' class='form-control' id='floatingInput'  name='Front_Camera' required rows='3' placeholder='Front_Camera'>
+            </div>
+            <div class='col-auto ms-auto col-sm-3'>
+            <input type='text' class='form-control' id='floatingInput'  name='Display' required rows='3' placeholder='Display'>
+            </div>
+        </div><br><br>
+        <button type='submit' name='Final_Submit' class='btn btn-outline-success'>Submit</button>
