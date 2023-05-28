@@ -25,7 +25,9 @@ if(!$conn){
   </head>
   <body >
     <header>
-        <!-- Navbar --><nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0" style="background-color:#00000081">
+        <!-- Navbar -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0" style="background-color:#00000081">
           <div class="container">
             <a class="navbar-brand" href="./index.html"><span style="color: #06ede2;">Nano</span><span style="color: rgb(255, 255, 255);">Review</span></a>
             <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"

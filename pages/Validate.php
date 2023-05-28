@@ -22,7 +22,65 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light top mask-custom shadow-0" style="background-color:#00000081">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0" style="background-color:#00000081">
+          <div class="container">
+            <a class="navbar-brand" href="./index.html"><span style="color: #06ede2;">Nano</span><span style="color: rgb(255, 255, 255);">Review</span></a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+              data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./laptops.php" style="color: #ffc2d6">Laptops</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./mobiles.php" style="color: #ffc2d6">Mobiles</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./processors.php" style="color: #ffc2d6">Processors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Validate.php" style="color: #ffc2d6">Contibute</a>
+                </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffc2d6">
+                      Compare
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="./laptop_compare.php">Laptops</a>
+                      <a class="dropdown-item" href="./mobile_compare.php">Mobiles</a>
+                      <a class="dropdown-item" href="./processor_compare.php">Processors</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./About_us.html" style="color: #ffc2d6">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.php" style="color: #ffc2d6">Contact</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item me-3 me-lg-0">
+                  <a class="nav-link" href="#!">
+                    <i class="fas fa-shopping-cart"></i>
+                  </a>
+                </li>
+                <li class="nav-item me-3 me-lg-0">
+                  <a class="nav-link" href="#!">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="nav-item me-3 me-lg-0">
+                  <a class="nav-link" href="#!">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
           <div class="container">
             <a class="navbar-brand" href="./index.html"><span style="color: #06ede2;">Nano</span><span style="color: rgb(255, 255, 255);">Review</span></a>
             <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"

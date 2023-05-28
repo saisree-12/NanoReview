@@ -25,6 +25,7 @@ if(!$conn){
       <center>
   <header>
         <!-- Navbar -->
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0" style="background-color:#00000081">
           <div class="container">
             <a class="navbar-brand" href="./index.html"><span style="color: #06ede2;">Nano</span><span style="color: rgb(255, 255, 255);">Review</span></a>
@@ -154,17 +155,17 @@ if(!$conn){
         <br>
         <img src="https://media1.giphy.com/media/Ie7Wkvuhu1hp0rZZ3Q/200w.webp?cid=ecf05e476yycb6ngn9gcoc75a47jpdqp8dgmynaoabaiv6ak&rid=200w.webp&ct=s" ></img>
         <form action="mobiles.php" method="post">
-        <select class="form-select" aria-label="Default select example" style="background-color:#FDFAF6" name="option">
-            <option selected>Open this select menu</option>
+        <select class="form-select" aria-label="Default select example" style="background-color:#FDFAF6,width:150px;" name="option">
+            <option selected >Open this select menu</option>
             <?php
             $query = "SELECT * FROM mobile_details";
             $result1 = mysqli_query($conn,$query);
             while ($row = mysqli_fetch_array($result1)):; ?>
             <option name="option">  <?php echo $row[0]; ?>  </option>
             <?php endwhile; ?>  
-            <php?
+            <!-- <php? 
               echo var_dump($row);
-              ?>
+              ?> -->
         </select>
         <br>
         <button type="submit"  name="fetch" class="btn btn-outline-success my-5 " style="width:20%">Fetch</button> 
@@ -182,14 +183,14 @@ if(!$conn){
     if(isset($_POST['fetch'])){
       // echo $_POST['option_mobile'];
       $selected= $_POST['option'];
-      var_dump($selected);
+      // var_dump($selected);
       $query="SELECT * FROM mobile_image WHERE mobile_name='$_POST[option]'"; 
             $res=mysqli_query($conn,$query);
             $row=mysqli_fetch_array($res);  
-            echo var_dump($row); 
+            // echo var_dump($row); 
               echo "<br>  
-              <div class='container row '>
-              <div class='container col p-2' style='margin-left:10%;'><img src='data:image;base64,".base64_encode($row['mobile_image'])."' alt='Image' style='width:500px; margin-top:30%;'></div>
+              <div class='container row'>
+              <div class='container col p-2'><img src='data:image;base64,".base64_encode($row['mobile_image'])."' alt='Image' style='width:500px; margin-top:30%;'></div>
               <div class='container col mt-5 pt-5' style='width:60%; height:500px;margin-top:10%'><p class='text-center h2'><i><strong>$row[mobile_name]</strong></i></p>
             <br>
               <div class='container shadow p-5' style='width:150%; margin-left:100px; position:relative; margin-top:10%' >
